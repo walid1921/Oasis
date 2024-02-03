@@ -18,5 +18,7 @@ module.exports = {
       { allowConstantExport: true },
     ],
     "no-unused-vars": "off", // Turn off the no-unused-vars rule
+    "no-undef": "off", // Turn off the no-undef rule
+    "no-restricted-globals": "off", // Turn off the no-restricted-globals rule
   },
 };

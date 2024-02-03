@@ -1,10 +1,9 @@
 import styled, { css } from "styled-components";
 
-const center = css`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-`;
+// const test = css`
+//   text-align: center;
+//   ${10 > 5 && "background-color: yellow"}
+// `;
 
 const Heading = styled.h1`
   ${(props) =>
@@ -12,7 +11,6 @@ const Heading = styled.h1`
     css`
       font-size: 3rem;
       font-weight: 600;
-      ${center}
     `}
 
   ${(props) =>
@@ -20,18 +18,24 @@ const Heading = styled.h1`
     css`
       font-size: 2rem;
       font-weight: 600;
-      ${center}
     `}
-
+    
     ${(props) =>
     props.as === "h3" &&
     css`
       font-size: 2rem;
       font-weight: 500;
-      ${center}
     `}
-
-    line-height: 1.4;
+    
+    ${(props) =>
+    props.as === "h4" &&
+    css`
+      font-size: 3rem;
+      font-weight: 600;
+      text-align: center;
+    `}
+    
+  line-height: 1.4;
 `;
 
 export default Heading;
