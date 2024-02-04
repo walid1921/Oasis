@@ -18,7 +18,7 @@ Is a Web-application to manage (**Booking**, **cabins** and **guests**) about "T
 
 - **Backend:** **`Supabase`** ![Supabase](https://img.shields.io/badge/-Supabase-396FBC?style=flat-square&logo=Supabase&logoColor=white)
 
-- **Other tools:** **`React icons`** **`React hot toast`** **`Recharts`** **`date-fns`**
+- **Other tools:** **`React Icons`** ![React Icons](https://img.shields.io/badge/-React%20Icons-61DAFB?style=flat-square&logo=React&logoColor=white) **`React Hot Toast`** ![React Hot Toast](https://img.shields.io/badge/-React%20Hot%20Toast-FF7A59?style=flat-square&logo=React&logoColor=white) **`Recharts`** ![Recharts](https://img.shields.io/badge/-Recharts-7DB3E8?style=flat-square&logo=Recharts&logoColor=white) **`date-fns`** ![date-fns](https://img.shields.io/badge/-date--fns-CCCCFF?style=flat-square&logo=date-fns&logoColor=white)
 
 
 
