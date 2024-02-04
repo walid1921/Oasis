@@ -4,21 +4,21 @@ Is a Web-application to manage (**Booking**, **cabins** and **guests**) about "T
 
 ## 📦 Technologies
 
-- **`React`** <img src="https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=React&logoColor=white" alt="React" width="100"  align="center">
+- **`React`** <img src="https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=React&logoColor=white" width="100"  align="center">
 
 - **Routing:** **`React Router`** <img src="https://img.shields.io/badge/-React%20Router-CA4245?style=flat-square&logo=React%20Router&logoColor=white" alt="React Router" width="100"  align="center">
 
-- **Styling:** **`Styled Components`** <img src="https://img.shields.io/badge/-Styled%20Components-DB7093?style=flat-square&logo=Styled-Components&logoColor=white" alt="Styled Components" width="100"  align="center">
+- **Styling:** **`Styled Components`** <img src="https://img.shields.io/badge/-Styled%20Components-DB7093?style=flat-square&logo=Styled-Components&logoColor=white"  width="100"  align="center">
 
-- **Remote state management:** **`React Query`** <img src="https://img.shields.io/badge/-React%20Query-000000?style=flat-square&logo=React%20Query&logoColor=white" alt="React Query" width="100"  align="center">
+- **Remote state management:** **`React Query`** <img src="https://img.shields.io/badge/-React%20Query-000000?style=flat-square&logo=React%20Query&logoColor=white" width="100"  align="center">
 
-- **UI State management:** **`Context API`** <img src="https://img.shields.io/badge/-Context%20API-3178C6?style=flat-square&logo=React&logoColor=white" alt="Context API" width="100"  align="center">
+- **UI State management:** **`Context API`** <img src="https://img.shields.io/badge/-Context%20API-3178C6?style=flat-square&logo=React&logoColor=white"  width="100"  align="center">
 
-- **Form management:** **`React Hook Form`** <img src="https://img.shields.io/badge/-React%20Hook%20Form-FF4088?style=flat-square&logo=React&logoColor=white" alt="React Hook Form" width="100"  align="center">
+- **Form management:** **`React Hook Form`** <img src="https://img.shields.io/badge/-React%20Hook%20Form-FF4088?style=flat-square&logo=React&logoColor=white" width="100"  align="center">
 
-- **Backend:** **`Supabase`** <img src="https://img.shields.io/badge/-Supabase-396FBC?style=flat-square&logo=Supabase&logoColor=white" alt="Supabase" width="100"  align="center">
+- **Backend:** **`Supabase`** <img src="https://img.shields.io/badge/-Supabase-396FBC?style=flat-square&logo=Supabase&logoColor=white" width="100"  align="center">
 
-- **Other tools:** **`React Icons`** <img src="https://img.shields.io/badge/-React%20Icons-61DAFB?style=flat-square&logo=React&logoColor=white" alt="React Icons" width="100"  align="center"> **`React Hot Toast`** <img src="https://img.shields.io/badge/-React%20Hot%20Toast-FF7A59?style=flat-square&logo=React&logoColor=white" alt="React Hot Toast" width="100"  align="center"> **`Recharts`** <img src="https://img.shields.io/badge/-Recharts-7DB3E8?style=flat-square&logo=Recharts&logoColor=white" alt="Recharts" width="100"  align="center"> **`date-fns`** <img src="https://img.shields.io/badge/-date--fns-CCCCFF?style=flat-square&logo=date-fns&logoColor=white" alt="date-fns" width="100"  align="center">
+- **Other tools:** **`React Icons`** <img src="https://img.shields.io/badge/-React%20Icons-61DAFB?style=flat-square&logo=React&logoColor=white" width="100"  align="center"> **`React Hot Toast`** <img src="https://img.shields.io/badge/-React%20Hot%20Toast-FF7A59?style=flat-square&logo=React&logoColor=white" width="100"  align="center"> **`Recharts`** <img src="https://img.shields.io/badge/-Recharts-7DB3E8?style=flat-square&logo=Recharts&logoColor=white" width="100"  align="center"> **`date-fns`** <img src="https://img.shields.io/badge/-date--fns-CCCCFF?style=flat-square&logo=date-fns&logoColor=white" width="100"  align="center">
 
 
 
