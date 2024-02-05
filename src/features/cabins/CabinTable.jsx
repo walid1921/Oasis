@@ -28,6 +28,8 @@ const TableHeader = styled.header`
 `;
 
 function CabinTable() {
+
+  // ! The useQuery hook is used to fetch data from the server and cache it using React Query.
   const {
     isLoading,
     error,
@@ -38,7 +40,6 @@ function CabinTable() {
   });
 
   if (isLoading) return <Spinner />;
-  if (error) return "An error has occurred: " + error.message;
 
   return (
     <Table role="table">

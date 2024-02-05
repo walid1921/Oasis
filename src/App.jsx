@@ -13,6 +13,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 import { Toaster } from "react-hot-toast";
 
+//! The QueryClientProvider component is used to provide the query client instance to the rest of the application. It should be placed at the root of the application.
 const queryClient = new QueryClient({
   defaultOptions: {
     queries: {

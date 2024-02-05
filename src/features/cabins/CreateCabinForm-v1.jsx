@@ -2,9 +2,7 @@ import { useMutation, useQueryClient } from "@tanstack/react-query";
 import toast from "react-hot-toast";
 import { useForm } from "react-hook-form";
 
-import { createNewCabin } from "../../services/apiCabins";
-import PropTypes from "prop-types";
-
+import { createCabin } from "../../services/apiCabins";
 import Input from "../../ui/Input";
 import Form from "../../ui/Form";
 import Button from "../../ui/Button";
@@ -12,17 +10,15 @@ import FileInput from "../../ui/FileInput";
 import Textarea from "../../ui/Textarea";
 import FormRow from "../../ui/FormRow";
 
-function CreateCabinForm() {
-
-
+function CreateCabinForm({ cabin }) {
   const { register, handleSubmit, reset, getValues, formState } = useForm();
 
   const { errors } = formState;
 
   const queryClient = useQueryClient(); // ! The useQueryClient hook is used to access the query client instance.
 
-  const { isLoading: isCreating, mutate: createCabin } = useMutation({
-    mutationFn: createNewCabin, // the same as (id) => createCabin(id)
+  const { isLoading: isCreating, mutate } = useMutation({
+    mutationFn: createCabin, // the same as (id) => createCabin(id)
     onSuccess: () => {
       // Invalidate the cache to trigger a re-fetch
       toast.success("Cabin created successfully");
@@ -34,12 +30,8 @@ function CreateCabinForm() {
     onError: (err) => toast.error(err.message),
   });
 
-
-
   const onSubmit = (data) => {
-    const image = typeof data.image === "string" ? data.image : data.image[0];
-
-   createCabin({ ...data, image: image });
+    mutate({ ...data, image: data.image[0] });
   };
 
   const onError = (errors) => {
@@ -135,23 +127,10 @@ function CreateCabinForm() {
         <Button variation="secondary" type="reset">
           Cancel
         </Button>
-        <Button disabled={isCreating}>
-          Create new cabin
-        </Button>
+        <Button disabled={isCreating}>Edit cabin</Button>
       </FormRow>
     </Form>
   );
 }
-
-CreateCabinForm.propTypes = {
-  cabinToEdit: PropTypes.shape({
-    id: PropTypes.number,
-    name: PropTypes.string,
-    maxCapacity: PropTypes.number,
-    regularPrice: PropTypes.number,
-    discount: PropTypes.number,
-    image: PropTypes.string,
-  }),
-};
 
 export default CreateCabinForm;
