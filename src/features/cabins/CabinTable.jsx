@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { getCabins } from "../../services/apiCabins";
 import Spinner from "../../ui/Spinner";
 import CabinRow from "./CabinRow";
+import { useFetchCabins } from "./useFetchCabins";
 
 const Table = styled.div`
   border: 1px solid var(--color-grey-200);
@@ -28,16 +29,7 @@ const TableHeader = styled.header`
 `;
 
 function CabinTable() {
-
-  // ! The useQuery hook is used to fetch data from the server and cache it using React Query.
-  const {
-    isLoading,
-    error,
-    data: cabins,
-  } = useQuery({
-    queryKey: ["cabins"],
-    queryFn: getCabins,
-  });
+  const { isLoading, error, cabins } = useFetchCabins();
 
   if (isLoading) return <Spinner />;
 
