@@ -17,7 +17,7 @@ import { Toaster } from "react-hot-toast";
 const queryClient = new QueryClient({
   defaultOptions: {
     queries: {
-      staleTime: 0, // Set to 0 to always fetch new data from the server when the component mounts or when the query is refetched manually or automatically by the query cache. This is useful for data that changes frequently. The default value is 0. This option can also be set to a number of milliseconds to cache the data for a specific amount of time. For example, setting it to 60 * 1000 will cache the data for 1 min.
+      staleTime: 0 // Set to 0 to always fetch the latest data
     },
   },
 });
